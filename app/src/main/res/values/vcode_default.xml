@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="vcode_bottom_icon_height">6dp</dimen>
+    <dimen name="vcode_bottom_icon_width">48dp</dimen>
+
+    <color name="vcode_bottom_error_icon_bg">#e84849</color>
+    <color name="vcode_text_color">#000000</color>
+</resources>

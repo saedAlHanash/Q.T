@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/bangers</item>
+        <item>@font/cabin_bold</item>
+        <item>@font/cairo</item>
+        <item>@font/cairo_bold</item>
+        <item>@font/cairo_semibold</item>
+        <item>@font/eater</item>
+        <item>@font/modak</item>
+        <item>@font/oi</item>
+        <item>@font/sonsie_one</item>
+    </array>
+</resources>

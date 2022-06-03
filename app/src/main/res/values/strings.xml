@@ -1,0 +1,74 @@
+<resources>
+
+    <string name="app_name">QT</string>
+    <string name="skip">تخطي</string>
+    <string name="next">التالي</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="terms_and_privacy">الشروط و الخصوصية</string>
+    <string name="with_continue">بالمتابعة أنت توافق على</string>
+    <string name="phone_number">ادخل رقم الهاتف </string>
+    <string name="forget_password1"><u>نسيت كلمة السر</u></string>
+    <string name="VerificationCode">تأكيد الرقم</string>
+    <string name="code_has_been_sent">تم ارسال رمز التأكيد عبر رسالة نصية الى لرقم</string>
+    <string name="confirm_cod">تأكيد الرقم</string>
+    <string name="resend_cod"><u>إعادة ارسال الرمز</u></string>
+    <string name="forget_password">نسيت كلمة السر</string>
+    <string name="Continue">متابعة</string>
+    <string name="change_password">تغيير كلمة المرور</string>
+    <string name="change">تغيير</string>
+    <string name="s_p_y">ل.س</string>
+    <string name="start_point">موقع نقطة الانطلاق</string>
+    <string name="destination_point">موقع الوجهة </string>
+    <string name="Leave_nice_message">اترك رسالة لطيفة</string>
+    <string name="your_feedback">ملاحظاتك</string>
+    <string name="send">ارسال</string>
+    <string name="call_us">اتصل بنا</string>
+    <string name="connect_with_us">تواصل معنا</string>
+    <string name="cancel">الغاء</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="_963_000_000_000">+963 000 000 000</string>
+    <string name="previous_trip">الرحلات السابقة</string>
+    <string name="connect_us">تواصل معنا</string>
+    <string name="Follow_us_on_social_media">تابعنا على السوشيال ميديا</string>
+    <string name="edit_number">تعديل الرقم</string>
+    <string name="edit">تعديل</string>
+    <string name="enter_full_name">أدخل اسمك الكامل</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="safe_trip_3_minutes_to_arrive">رحلة آمنة 3 دقائق على الوصول</string>
+    <string name="login_as_driver">تسجيل الدخول كسائق</string>
+    <string name="driver">السائق</string>
+    <string name="my_balance">حسابي</string>
+    <string name="rating">تقييم</string>
+    <string name="last_order">حساب آخر طلب</string>
+    <string name="additional_incentives">الحوافز</string>
+    <string name="check_internet">الرجاء التحقق من جودة الإنترنت</string>
+    <string name="my_profile">صفحتي الشخصية</string>
+    <string name="requir">"هذا الحقل مطلوب "</string>
+    <string name="edit_done">تم تعديل المعلومات بنجاح</string>
+    <string name="done">تم</string>
+    <string name="client_name">اسم الزبون</string>
+    <string name="searching_order">يتم البحث عن طلب</string>
+    <string name="don_have_order">تم العثور على طلب</string>
+    <string name="search_anther">البحث عن طلب آخر</string>
+    <string name="accept_trip">قبول الطلب</string>
+    <string name="start_trip">بدأ الرحلة ( عند ركوب الزبون )</string>
+    <string name="don_accept_order">"تم قبول الطلب "</string>
+    <string name="PN">+963xxxxxxx</string>
+    <string name="km">x km</string>
+    <string name="T">xx:xx min</string>
+    <string name="is_payed">هل تم الدفع ؟</string>
+    <string name="rating_client">اضافة تقييم</string>
+    <string name="leave_a_comment"><![CDATA[>> ملاحظات]]></string>
+    <string name="rating_client1">تقييم الزبون</string>
+    <string name="back">رجوع</string>
+    <string name="pleas_wait">الرجاء الإنتظار</string>
+    <string name="new_pass">new password</string>
+    <string name="scheduler_trips">الرحلات المجدولة</string>
+    <string name="licens"><u>سياسة الخصوصية</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+</resources>

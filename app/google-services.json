@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "82907088504",
+    "project_id": "saed-test-17ffb",
+    "storage_bucket": "saed-test-17ffb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82907088504:android:5450266053580a60378f8d",
+        "android_client_info": {
+          "package_name": "com.example.saed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82907088504-v10vkv69b4jq5pmjhqjqgqs421d5gs1n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCce5NjVNWvOdI-wOUbEesIc69lQF3NjHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82907088504-v10vkv69b4jq5pmjhqjqgqs421d5gs1n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
