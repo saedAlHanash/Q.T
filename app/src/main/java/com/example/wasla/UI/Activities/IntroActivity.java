@@ -2,6 +2,7 @@ package com.example.wasla.UI.Activities;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -35,10 +36,10 @@ public class IntroActivity extends AppCompatActivity {
 
     @BindView(R.id.skip_btn)
     AppCompatButton skipBtn;
-    @BindView(R.id.textView)
-    TextView textView;
-    @BindView(R.id.under_logo)
-    LinearLayout underLogo;
+    @BindView(R.id.imageView)
+    ImageView image;
+    @BindView(R.id.textView5)
+    TextView underImage;
     @BindDimen(R.dimen._180sdp)
     int _180sdp;
 
@@ -55,19 +56,30 @@ public class IntroActivity extends AppCompatActivity {
         hideStatusBar(this);
 
         listeners();
-        YoYo.with(Techniques.SlideInDown).duration(500).playOn(textView);
-        YoYo.with(Techniques.SlideInUp).delay(1000).duration(500).playOn(underLogo);
+
+        new Handler(getMainLooper()).postDelayed(() -> {
+            ImageViewAnimatedChange(this, image, R.drawable.taxi_delay, "متأخر ومافي مواصلات..؟");
+        }, 4000);
+
+        new Handler(getMainLooper()).postDelayed(() -> {
+            ImageViewAnimatedChange(this, image, R.drawable.taxi_save_money, "حابب ترتاح وتوفر..؟");
+        }, 8000);
+
+        new Handler(getMainLooper()).postDelayed(() -> {
+            ImageViewAnimatedChange(this, image, R.drawable.taxi_autopilot, "مالك غير Q.T");
+            skipBtn.setText("التالي");
+        }, 12000);
+
+
+
 
 
     }
 
     void listeners() {
         skipBtn.setOnClickListener(view -> {
-
             SharedPreference.CASH_SHOW_INTRO();
-
             startMain();
-
         });
     }
 
@@ -79,5 +91,32 @@ public class IntroActivity extends AppCompatActivity {
         startActivity(intent);
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         this.finish();
+    }
+
+    public void ImageViewAnimatedChange(Context c,
+                                        final ImageView v,
+                                        final int new_image,
+                                        String text) {
+        final Animation anim_out = AnimationUtils.loadAnimation(c, R.anim.fade_out);
+        final Animation anim_in = AnimationUtils.loadAnimation(c, R.anim.fade_in);
+        anim_out.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                v.setImageResource(new_image);
+                underImage.setText(text);
+
+                v.startAnimation(anim_in);
+                underImage.startAnimation(anim_in);
+            }
+        });
+        v.startAnimation(anim_out);
     }
 }

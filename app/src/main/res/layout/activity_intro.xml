@@ -8,30 +8,6 @@
     android:layoutDirection="rtl"
     tools:context=".UI.Activities.IntroActivity">
 
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleX="1.2"
-        android:alpha="0.1"
-        android:scaleY="2.5"
-        android:text="Q.T"
-        android:fontFamily="@font/sonsie_one"
-        android:gravity="center"
-        android:textSize="@dimen/_80ssp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animationView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:lottie_autoPlay="true" />
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/skip_btn"
         android:layout_width="wrap_content"
@@ -46,58 +22,29 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/_50sdp"
-        android:fontFamily="@font/cairo_bold"
-        android:text="وين ماكنت ..؟ "
-        android:textColor="@color/main_color_text"
-        android:textSize="@dimen/_14ssp"
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_300sdp"
+        android:src="@drawable/serching_taxi"
         app:layout_constraintBottom_toTopOf="@+id/skip_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-
-    <LinearLayout
-        android:id="@+id/under_logo"
+    <TextView
+        android:id="@+id/textView5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:fontFamily="@font/cairo_bold"
+        android:gravity="center"
+        android:text="عم تدور على تكسي..؟"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/imageView1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/_3sdp"
-            android:layout_marginBottom="@dimen/_3sdp"
-            android:fontFamily="@font/sonsie_one"
-            android:gravity="center"
-            android:text="Q.T"
-            android:textColor="@color/main_color_text"
-            android:textSize="@dimen/_30ssp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/_3sdp"
-            android:layout_marginBottom="@dimen/_3sdp"
-            android:fontFamily="@font/cairo"
-            android:text="نحن بانتظارك"
-            android:textColor="@color/main_color_text"
-            android:textSize="@dimen/_18ssp"
-            app:layout_constraintBottom_toTopOf="@+id/skip_btn"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

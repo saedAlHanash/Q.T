@@ -15,21 +15,19 @@ import com.example.wasla.AppConfig.Cods;
 import com.example.wasla.Helpers.Converters.DateConverter;
 import com.example.wasla.Helpers.View.Counter;
 import com.example.wasla.Helpers.View.FTH;
-import com.example.wasla.Models.Request.ChangePassRequest;
 import com.example.wasla.R;
 import com.example.wasla.UI.Fragments.UserAuth.Auth.LoginFragment;
-import com.example.wasla.ViewModels.AuthViewModel;
+
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.Date;
-import java.util.Objects;
+
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import static com.example.wasla.AppConfig.Cods.Auth_C;
 import static com.example.wasla.AppConfig.SharedPreference.CASH_TIMER;
-import static com.example.wasla.AppConfig.SharedPreference.GET_FORGET_PASS_PHONE;
 import static com.example.wasla.AppConfig.SharedPreference.GET_TIMER;
 import static com.example.wasla.AppConfig.SharedPreference.IS_THERE_TIMER;
 import static com.example.wasla.AppConfig.SharedPreference.REMOVE_COD_STAT;
@@ -55,7 +53,6 @@ public class ChangePasswordFragment extends Fragment {
     TextView counter;
     @BindView(R.id.login)
     TextView login;
-
 
 
     @Override
@@ -119,33 +116,42 @@ public class ChangePasswordFragment extends Fragment {
 
     //زر المتابة
     private final View.OnClickListener listener = v -> {
-        if (checkFields()) {
-
-            String pass = Objects.requireNonNull(this.password.getText()).toString();
-            String cod = Objects.requireNonNull(this.cod.getText()).toString();
 
 
-            AuthViewModel.getInstance().changePassword(new ChangePassRequest(cod, pass));
-            AuthViewModel.getInstance().changePassLiveData.observe(requireActivity(), observer);
-        }
+        FTH.popAllStack(requireActivity());
+        FTH.replaceFragment(Cods.Auth_C, requireActivity(), new LoginFragment());
+
+
+//        if (checkFields()) {
+//
+//            String pass = Objects.requireNonNull(this.password.getText()).toString();
+//            String cod = Objects.requireNonNull(this.cod.getText()).toString();
+//
+//
+//            AuthViewModel.getInstance().changePassword(new ChangePassRequest(cod, pass));
+//            AuthViewModel.getInstance().changePassLiveData.observe(requireActivity(), observer);
+//        }
     };
 
     // اعادة ارسال الرمز
     private final View.OnClickListener reSendCodListener = v -> {
 
-        AuthViewModel.getInstance().resendCod(GET_FORGET_PASS_PHONE());
+        CASH_TIMER();
+        checkTimer();
 
-        AuthViewModel.getInstance().resendLiveData.observe(requireActivity(), pair -> {
-            if (pair != null) {
-
-                CASH_TIMER();
-                checkTimer();
-
-            } else {
-                resendCod.setVisibility(View.VISIBLE);
-            }
-
-        });
+//        AuthViewModel.getInstance().resendCod(GET_FORGET_PASS_PHONE());
+//
+//        AuthViewModel.getInstance().resendLiveData.observe(requireActivity(), pair -> {
+//            if (pair != null) {
+//
+//                CASH_TIMER();
+//                checkTimer();
+//
+//            } else {
+//                resendCod.setVisibility(View.VISIBLE);
+//            }
+//
+//        });
 
 
     };

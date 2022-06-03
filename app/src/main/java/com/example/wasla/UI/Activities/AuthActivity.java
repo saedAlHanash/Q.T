@@ -10,6 +10,7 @@ import com.example.wasla.AppConfig.SharedPreference;
 import com.example.wasla.Helpers.View.FTH;
 import com.example.wasla.R;
 import com.example.wasla.UI.Fragments.UserAuth.Auth.AuthFragment;
+import com.example.wasla.UI.Fragments.UserAuth.Auth.LoginFragment;
 import com.example.wasla.UI.Fragments.UserAuth.passwordConfirm.ChangePasswordFragment;
 
 import butterknife.BindView;
@@ -30,6 +31,6 @@ public class AuthActivity extends AppCompatActivity {
         if (SharedPreference.IS_THERE_COD())
             FTH.replaceFragment(Cods.Auth_C, this, new ChangePasswordFragment());
         else
-            FTH.replaceFragment(Cods.Auth_C, this, new AuthFragment());
+            FTH.replaceFragment(Cods.Auth_C, this, new LoginFragment());
     }
 }

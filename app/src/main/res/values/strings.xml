@@ -62,13 +62,143 @@
     <string name="rating_client1">تقييم الزبون</string>
     <string name="back">رجوع</string>
     <string name="pleas_wait">الرجاء الإنتظار</string>
-    <string name="new_pass">new password</string>
+    <string name="new_pass">كلمة المرور الجديدة</string>
     <string name="scheduler_trips">الرحلات المجدولة</string>
     <string name="licens"><u>سياسة الخصوصية</u></string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+    <string name="sing_up">تسجيل حساب</string>
+
+    <string name="password">كلمة السر</string>
+    <string name="new_password">كلمة السر الجديدة</string>
+    <string name="remember_me">تذكرني</string>
+    <string name="login1"> <u> تسجيل الدخول</u></string>
+    <string name="do_not_have_account">ليس لديك حساب ؟</string>
+    <string name="have_account">لديك حساب ؟</string>
+    <string name="sing_up1"><u>انشاء حساب</u></string>
+
+    <string name="previous_orders">الرحلات السابقة</string>
+    <string name="car_color">لون السيارة</string>
+    <string name="plate_number">رقم لوحة السيارة</string>
+    <string name="type_and_number_of_car">اسم ونوع السيارة</string>
+    <string name="driver_name">اسم السائق</string>
+
+    <string name="car_type">نوع السيارة</string>
+    <string name="car_number">رقم السيارة</string>
+    <string name="add_coupon">اضافة كود حسم</string>
+    <string name="enter_coupon_code">ادخل كود الحسم للمتابعة</string>
+    <string name="coupon_code">كود الحسم</string>
+    <string name="save_as">حفظ المكان المحدد باسم</string>
+    <string name="home">المنزل</string>
+    <string name="save">حفظ</string>
+    <string name="select_date_trip">تحديد رحلة مسبقاً</string>
+    <string name="today">اليوم</string>
+    <string name="_10_30_pm">10:30 PMً</string>
+    <string name="reset_date">إعادة الضبط</string>
+    <string name="booking_now">اطلب سيارة الأن</string>
+    <string name="booking_date_trip">تحديد رحلة مسبقاً</string>
+    <string name="start_location">موقع الانطلاق</string>
+    <string name="booking_car_now">اطلب سيارة الآن</string>
+    <string name="destination_location">موقع الوجهة</string>
+    <string name="cancel_trip">إلغاء الرحلة</string>
+    <string name="Why_you_want_to_cancel_trip">لماذا تريد إلغاء الرحلة ؟</string>
+    <string name="The_driver_is_too_far_away">السائق بعيد جداً</string>
+    <string name="changed_my_mind">غيرت رأيي</string>
+    <string name="the_trip_is_expensive">المبلغ كبير</string>
+    <string name="notes">ملاحظات</string>
+    <string name="calssic">كلاسيكي</string>
+    <string name="xxx_syp">xxx SYP</string>
+    <string name="select_type_vehicle">اختر نوع التوصيل</string>
+    <string name="confirm_trip">تأكيد الرحلة</string>
+    <string name="delete_save_place">حذف المكان المحفوظ ؟</string>
+
+    <string name="profile">الملف الشخصي</string>
+
+    <string name="saved_places">الأماكن المحفوظة</string>
+    <string name="coupon">كود الحسم</string>
+
+    <string name="edit_password">تعديل كلمة السر</string>
+    <string name="enter_password">ادخل كلمة السر للمتابعة</string>
+    <string name="sorry_an_error_occur">عذراً , حدث خطأ ما</string>
+    <string name="confirme_password">تأكيد كلمة السر</string>
+    <string name="create_new_account">انشاء حساب</string>
+    <string name="check_number">التحقق من الرقم</string>
+    <string name="payment_done">تم الدفع بنجاح</string>
+    <string name="so_someone_st_com">so.someone@st.com</string>
+    <string name="number_of_trips">عدد الرحلات</string>
+    <string name="amount_of_discount">متبقي الحسم</string>
+    <string name="log_out">تسجيل الخروج</string>
+    <string name="delete_account">حذف الحساب</string>
+    <string name="add">إضافة</string>
+    <string name="show_result">عرض النتائج</string>
+    <string name="research_results">نتائج البحث</string>
+    <string name="location_on_map">موقع على الخريطة</string>
+    <string name="select">تحديد</string>
+    <string name="active_coupon_code">تم تفعيل الكود بنجاح</string>
+    <string name="caneled_successfully">تم إلغاء الرحلة بنجاح</string>
+    <string name="xxxxxxx">xxxxxxx</string>
+    <string name="looking_for_driver">يتم البحث عن سائق</string>
+
+    <string name="setting">الاعدادات</string>
+    <string name="english_language" translatable="false">English Language</string>
+    <string name="error_message">رسالة خطأ</string>
+    <string name="successful_message">رسالة ناجحة</string>
+    <string name="connection_error">حدث خطأ في الاتصال</string>
+    <string name="edit_profile_info">تعديل المعلومات الشخصية</string>
+    <string name="active_successfully">تم تفعيل الحسم</string>
+    <string name="your_feed_back_title">ادخل عنوان ملاحظاتك</string>
+    <string name="send_message">تم الارسال بنجاح</string>
+    <string name="requierd">هذا الحقل مطلوب</string>
+    <string name="sign_up_successfully">تم انشاء الحساب بنجاح</string>
+    <string name="user_name_or_email_address">ادخل البريد الالكتروني او اسم المستخدم</string>
+    <string name="last_name">الاسم الاخير</string>
+    <string name="first_name">الاسم الاول</string>
+    <string name="confirm_password">تأكيد كلمة السر</string>
+    <string name="rate_driver">تقييم السائق</string>
+    <string name="add_rating">إضافة تقييم</string>
+    <string name="enter_phone_number">ادخل رقم الهاتف المحمول</string>
+    <string name="place_name">اسم مكان</string>
+    <string name="driver_is_near">السائق أوشك على الوصول</string>
+    <string name="driver_is_near_body">سوف تبدأ رحلتك بعد قليل</string>
+    <string name="number_not_correct">الرقم غير صحيح</string>
+    <string name="last_name_up_to_value">الاسم الاخير تجاوز الحد المسموح</string>
+    <string name="first_name_up_to_value">الاسم الاول تجاوز الحد المسموح</string>
+    <string name="wrong_email">يجب ادخال بريد الكتروني صحيح</string>
+    <string name="rating_wron">الحد الادنى للتقييم هو نجمة واحدة فقط</string>
+    <string name="rating_done">تم التقييم بنجاح</string>
+    <string name="point_not_selected">لم يتم تحديد موقع على الخريطة</string>
+    <string name="cancel_done">تم إلغاء الرحلة بنجاح</string>
+    <string name="you_arrived">لقد وصلت</string>
+    <string name="safe_trip">رحلة امنة </string>
+    <string name="to_arrive"> على الوصول </string>
+    <string name="driver_not_found">لم يتم العثور على سائق</string>
+    <string name="confirm_code_not_compelet">رمز التأكيد غير كامل</string>
+    <string name="password_not_same">كلمة السر غير مطابقة</string>
+    <string name="your_request_send">تم تسجيل طلبك , يرجى الانتظار</string>
+    <string name="wrong_number">الرقم غير صحيح</string>
+    <string name="message">الرسالة</string>
+    <string name="title">العنوان</string>
+    <string name="driver_found"> تم العثور على سائق </string>
+    <string name="gps_turn_on">تم تفعيل GPS</string>
+    <string name="turn_on">تم التفعيل</string>
+    <string name="wrong_password">كلمة السر غير صحيحة</string>
+    <string name="welcome_to_qareeb_app">اهلا بك في تطبيق قريب</string>
+    <string name="now">الآن</string>
+    <string name="your_notes">ملاحظاتك</string>
+    <string name="scheduled_booking_done">تم حجز رحلة مجدولة بنجاح</string>
+    <string name="trip_time_not_vaild">الوقت المحدد غير متاح</string>
+    <string name="selected_location">الموقع المحدد</string>
+    <string name="driver_gender">نوع السائق</string>
+    <string name="male" >ذكر</string>
+    <string name="female">انثى</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="no_privacy_policy">لا يوجد سياسية خصوصية</string>
+    <string name="wron_sign_up_account_exist">هذا الحساب موجود مسبقاً</string>
+    <string name="account_need_active">هذا الحساب موجود مسبقاً لكن يحتاج إلى تفعيل</string>
+    <string name="accept_driver">سائق الرحلة</string>
+    <string name="select_location">تحديد الموقع</string>
+    <string name="trip_time_date_not_selected">لم يتم تحديد تاريخ أو وقت للرحلة</string>
+    <string name="confirm_code">رمز التأكيد</string>
 
 
 </resources>

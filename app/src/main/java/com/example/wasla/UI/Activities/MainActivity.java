@@ -1,4 +1,4 @@
-package com.example.wasla.UI;
+package com.example.wasla.UI.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 

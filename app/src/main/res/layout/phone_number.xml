@@ -8,7 +8,7 @@
     android:background="@color/off_white">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout_email"
+        android:id="@+id/phoneNumber_outLine"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/phone_number"
@@ -37,9 +37,9 @@
         android:layout_marginEnd="@dimen/_10sdp"
         android:layout_marginBottom="@dimen/_8sdp"
         android:background="@drawable/line_vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout_email"
+        app:layout_constraintBottom_toBottomOf="@+id/phoneNumber_outLine"
         app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textInputLayout_email" />
+        app:layout_constraintTop_toTopOf="@+id/phoneNumber_outLine" />
 
     <TextView
         android:id="@+id/textView2"
@@ -58,5 +58,5 @@
         android:background="@drawable/line_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_email" />
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumber_outLine" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -42,7 +42,6 @@ public class ForgetPasswordFragment extends Fragment {
     AppCompatButton continueBtn;
 
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_forget_password, container, false);
@@ -57,8 +56,16 @@ public class ForgetPasswordFragment extends Fragment {
         continueBtn.setOnClickListener(listener);
     }
 
+
+    void sendRequestApi(String p) {
+        AuthViewModel.getInstance().forgetPassWord(p);
+        AuthViewModel.getInstance().forgetPassLiveData.observe(requireActivity(), observerForgetPass);
+    }
+
     // مراقب المتابعة
     private final Observer<Pair<Boolean, String>> observerForgetPass = pair -> {
+        if (!isAdded())
+            return;
 
         continueBtn.setEnabled(true);
 
@@ -108,8 +115,8 @@ public class ForgetPasswordFragment extends Fragment {
                 REMOVE_TIMER();
 
                 // طلب ارسال الرسالة من api
-                AuthViewModel.getInstance().forgetPassWord(p);
-                AuthViewModel.getInstance().forgetPassLiveData.observe(requireActivity(), observerForgetPass);
+//                sendRequestApi(p);
+                goToNext();
 
 
             } else {

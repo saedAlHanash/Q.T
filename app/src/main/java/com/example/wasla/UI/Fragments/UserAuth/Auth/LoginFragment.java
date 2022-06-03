@@ -124,7 +124,7 @@ public class LoginFragment extends Fragment {
     };
     //نسيت كلمة المرور
     private final View.OnClickListener onForgetPassClicked = v -> {
-        FTH.replaceFragment(Auth_C, requireActivity(), new ForgetPasswordFragment());
+        FTH.addFragmentUpFragment(Auth_C, requireActivity(), new ForgetPasswordFragment(),"");
     };
 
 // ___ checking  _____________________________________________________________

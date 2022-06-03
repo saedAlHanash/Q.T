@@ -147,7 +147,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/_10sdp"
-                    android:background="@drawable/gradient_light_green"
+                    android:background="@drawable/background_btn"
                     android:fontFamily="@font/cairo"
                     android:text="@string/login"
                     android:textColor="@color/white"

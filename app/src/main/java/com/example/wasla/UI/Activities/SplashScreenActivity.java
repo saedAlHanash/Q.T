@@ -11,7 +11,6 @@ import androidx.lifecycle.Observer;
 import com.example.wasla.Models.Response.AvailableModel;
 import com.example.wasla.Models.Response.BalanceOfToday;
 import com.example.wasla.R;
-import com.example.wasla.UI.MainActivity;
 import com.example.wasla.ViewModels.DriverViewModel;
 import com.example.wasla.ViewModels.UserViewModel;
 
@@ -22,7 +21,6 @@ import static com.example.wasla.AppConfig.SharedPreference.IS_SHOW_INTRO;
 import static com.example.wasla.AppConfig.SharedPreference.IS_THERE_ACCESS_TOKEN;
 import static com.example.wasla.AppConfig.SharedPreference.IS_THERE_TRIP;
 import static com.example.wasla.AppConfig.SharedPreference.getInstance;
-import static com.example.wasla.Helpers.View.NoteMessage.*;
 import static com.example.wasla.Helpers.View.NoteMessage.TOAST_ERROR;
 import static com.example.wasla.Helpers.View.NoteMessage.TOAST_NO_INTERNET;
 
@@ -49,7 +47,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     private void mackDriverAvailable() {
         DriverViewModel.getInstance().makeDriverAvailable();
-        DriverViewModel.getInstance().availableDriverLiveData.observe(this, observerMakeDriver);
+      //  DriverViewModel.getInstance().availableDriverLiveData.observe(this, observerMakeDriver);
     }
 
     /**
@@ -72,29 +70,29 @@ public class SplashScreenActivity extends AppCompatActivity {
 
 //__ Observers___________________________________________________________________________
 
-    //راقب اتاحةالسائق
-    private final Observer<Pair<AvailableModel, String>> observerMakeDriver = pair -> {
-
-        if (pair != null) {
-            if (pair.first != null) {
-                Intent intent = new Intent(this, MainMapActivity.class);
-
-                if (pair.first.result != null) {
-                    intent.putExtra(LAT, pair.first.result.lat);
-                    intent.putExtra(LNG, pair.first.result.lng);
-                }
-
-                startActivity(intent);
-
-                this.finish();
-
-            } else
-                TOAST_ERROR(this, pair.second);
-        }
-        else
-        TOAST_NO_INTERNET(this);
-
-    };
+//    //راقب اتاحةالسائق
+//    private final Observer<Pair<AvailableModel, String>> observerMakeDriver = pair -> {
+//
+//        if (pair != null) {
+//            if (pair.first != null) {
+//                Intent intent = new Intent(this, MainMapActivity.class);
+//
+//                if (pair.first.result != null) {
+//                    intent.putExtra(LAT, pair.first.result.lat);
+//                    intent.putExtra(LNG, pair.first.result.lng);
+//                }
+//
+//                startActivity(intent);
+//
+//                this.finish();
+//
+//            } else
+//                TOAST_ERROR(this, pair.second);
+//        }
+//        else
+//        TOAST_NO_INTERNET(this);
+//
+//    };
 
     //مراقب المعلومات اليومية للسائق
     private final Observer<Pair<BalanceOfToday, String>> observer = pair -> {
@@ -188,7 +186,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     private void removeObservers() {
 
         if (DriverViewModel.getInstance().availableDriverLiveData != null)
-            DriverViewModel.getInstance().availableDriverLiveData.removeObserver(observerMakeDriver);
+           // DriverViewModel.getInstance().availableDriverLiveData.removeObserver(observerMakeDriver);
 
         if (driver.dayInfoLiveData != null)
             driver.dayInfoLiveData.removeObserver(observer);
